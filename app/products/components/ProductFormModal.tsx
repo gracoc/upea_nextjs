@@ -19,6 +19,7 @@ export default function ProductFormModal({
   product,
   onSuccess,
 }: Props) {
+  
   const { createProduct, loading, error } = usePostProduct();
   const [isOpen, setIsOpen] = useState(false); // Control local del estado del modal
   const [title, setTitle] = useState(product?.title ?? "");
